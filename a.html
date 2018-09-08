@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+        
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+                
+<!-- plus a jQuery UI theme, here I use "flick" -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">  <script src="sp/sp.js"></script>
+<link rel="stylesheet" href="sp/js.css">
+        <style>
+        </style>
+    </head>
+<body><br>
+    <div class="slider"></div>
+    <script>
+    $(document).ready(function(){
+      $(".slider")
+    .slider({ 
+        min: 0, 
+        max: 105, 
+        value: 75, 
+        step: 5 
+    })
+    .slider("pips", {
+        rest: "label",       
+        
+    });
+    });
+    </script>
+    
+    </body>
+</html>
